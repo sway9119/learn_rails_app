@@ -12,5 +12,6 @@ module LearnRailsApp
   class Application < Rails::Application
     config.load_defaults 7.0
     config.time_zone = 'Tokyo' # アプリケーションやActiveRecordで利用するデフォルトのタイムゾーンを設定。デフォルトは'UTC'
+    config.appvar = { auther: 'test auther' }
   end
 end
