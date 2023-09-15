@@ -15,4 +15,9 @@ class BasicController < ApplicationController
     @headers = request.headers
   end
 
+  def render_inline
+    # 現在時刻を表示
+    render inline: '<%= Time.now %>'
+  end
+
 end
