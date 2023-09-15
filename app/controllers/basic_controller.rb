@@ -7,4 +7,12 @@ class BasicController < ApplicationController
       EOS
   end
 
+  def req_header_user_agent
+    render plain: request.headers['User-Agent']
+  end
+
+  def req_headers
+    @headers = request.headers
+  end
+
 end

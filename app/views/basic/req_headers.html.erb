@@ -1,0 +1,9 @@
+<table>
+  <% #取得したヘッダ情報（キー／値）を順に出力 %>
+  <% @headers.each do |key, value|%>
+  <tr>
+    <th><%= key%></th>
+    <th><%= value%></th>
+  </tr>
+  <%end%>
+</table>
