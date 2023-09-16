@@ -20,4 +20,9 @@ class BasicController < ApplicationController
     render inline: '<%= Time.now %>'
   end
 
+  def render_xml
+    personal = {'name' => 'Yamada', 'old' => 28}
+    render xml: personal
+  end
+  
 end
