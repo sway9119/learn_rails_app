@@ -47,5 +47,9 @@ class BasicController < ApplicationController
     # 応答ステータス（404 Not　Found）を通知
     head :not_found
   end
-  
+
+  def res_redirect
+    redirect_to 'https://wings.msn.to/', status: :moved_permanently, allow_other_host: true
+  end
+
 end

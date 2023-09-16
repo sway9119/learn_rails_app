@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'basic/render_json'
   get 'basic/xml_to_json'
   get 'basic/res_head'
+  get 'basic/res_redirect'
   get 'info/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
