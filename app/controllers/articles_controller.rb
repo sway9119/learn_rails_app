@@ -9,6 +9,7 @@ class ArticlesController < ApplicationController
       format.html
       format.json { render json: @articles} # /articles.jsonでリクエストが来るとJSON形式に変換＆出力
       format.xml { render xml: @articles} # /articles.xmlでリクエストが来るとXML形式に変換＆出力
+      format.atom
     end
   end
 
