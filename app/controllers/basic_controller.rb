@@ -52,4 +52,12 @@ class BasicController < ApplicationController
     redirect_to 'https://wings.msn.to/', status: :moved_permanently, allow_other_host: true
   end
 
+  def xml_build
+    # /basic/xml_build/1.xmlでアクセスされた場合に対応
+    @article = Article.find(params[:id])
+    respond_to do |format|
+      format.xml
+    end
+  end
+
 end
