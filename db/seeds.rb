@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+20.times do |index|
+  Article.create!(
+    title: "タイトル#{index}",
+    content: "本文#{index}",
+    category: "カテゴリー#{index}",
+    published: "2023-09-16",
+    access: index,
+    comments_count: index,
+    closed: false
+  )
+end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :articles
   get 'basic/name'
   get 'basic/req_headers'
   get 'basic/render_inline'
