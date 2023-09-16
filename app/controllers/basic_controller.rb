@@ -43,4 +43,9 @@ class BasicController < ApplicationController
     end
   end
 
+  def res_head
+    # 応答ステータス（404 Not　Found）を通知
+    head :not_found
+  end
+  
 end
