@@ -24,5 +24,10 @@ class BasicController < ApplicationController
     personal = {'name' => 'Yamada', 'old' => 28}
     render xml: personal
   end
-  
+
+  def render_json
+    personal = {name: "Yamada", old: 28}
+    render json: personal
+  end
+    
 end
