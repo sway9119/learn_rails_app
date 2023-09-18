@@ -60,4 +60,11 @@ class BasicController < ApplicationController
     end
   end
 
+  def redirect_flash
+    redirect_to({ action: 'redirect_flash2'}, notice: 'noticeメッセージ')
+  end
+
+  def redirect_flash2
+  end
+
 end

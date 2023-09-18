@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'basic/res_head'
   get 'basic/res_redirect'
   get 'basic/xml_build/:id', to: 'basic#xml_build'
+  get 'basic/redirect_flash'
+  get 'basic/redirect_flash2'
   get 'info/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
