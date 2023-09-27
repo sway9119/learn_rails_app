@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get 'basic/redirect_flash2'
   get 'info/index'
   get 'model/attr_names'
+  get 'model/article_num2'
+  get 'model/article_num2_limit1'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
