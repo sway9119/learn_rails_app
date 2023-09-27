@@ -6,4 +6,7 @@ class Article < ApplicationRecord
   # titleに2が含まれるのものをn件取得する
   scope :num2_limit, -> (n) {num2.limit(n)}
 
+  # デフォルトで、更新年月日を降順でソート
+  default_scope {order('updated_at DESC')}
+
 end
