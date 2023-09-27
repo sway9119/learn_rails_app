@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'model/attr_names'
   get 'model/article_num2'
   get 'model/article_num2_limit1'
+  get 'model/article_num2_limit'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

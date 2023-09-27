@@ -12,4 +12,10 @@ class ModelController < ApplicationController
     @articles = Article.num2_limit1
     render "articles/index", collection: @artciles
   end
+
+  def article_num2_limit
+    @articles = Article.num2_limit(1)
+    render "articles/index", collection: @artciles
+  end
+
 end
