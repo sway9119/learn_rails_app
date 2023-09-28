@@ -34,4 +34,10 @@ class ModelController < ApplicationController
   rescue => e
     render plain: '例外発生: ' + e.message
   end
+
+  def raw_sql
+    @article = ActiveRecord::Base.connection.execute('SELECT * FROM articles WHERE id = 1')
+    render json: @article
+  end
+
 end

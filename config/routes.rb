@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get 'model/article_num2_limit1'
   get 'model/article_num2_limit'
   get 'model/transact'
+  get 'model/raw_sql'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
