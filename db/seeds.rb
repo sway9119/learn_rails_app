@@ -16,3 +16,11 @@
     closed: false
   )
 end
+
+20.times do |index|
+  Comment.create!(
+    articles_id: index + 1, # Articleのindexの開始が1なので1から開始する
+    title: "タイトル#{index}",
+    body: "本文#{index}"  
+  )
+end
